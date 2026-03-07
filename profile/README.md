@@ -34,9 +34,11 @@
 
 <div align="center">
 
-<a href="https://github.com/Constellation-team/front-end"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Constellation-team&repo=front-end&theme=dark&hide_border=true" /></a>
-<a href="https://github.com/Constellation-team/back-end"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Constellation-team&repo=back-end&theme=dark&hide_border=true" /></a>
-<a href="https://github.com/Constellation-team/cre-orchestrator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Constellation-team&repo=cre-orchestrator&theme=dark&hide_border=true" /></a>
+[![front-end](https://img.shields.io/badge/front--end-React_19_%7C_Vite_7_%7C_TypeScript_%7C_RainbowKit-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://github.com/Constellation-team/front-end)
+
+[![back-end](https://img.shields.io/badge/back--end-Node.js_22_%7C_Express_4_%7C_solc_%7C_Docker-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/Constellation-team/back-end)
+
+[![cre-orchestrator](https://img.shields.io/badge/cre--orchestrator-%40chainlink%2Fcre--sdk_1.0.9_%7C_CronCapability_%7C_workflow.yaml-375BD2?style=for-the-badge&logo=chainlink&logoColor=white)](https://github.com/Constellation-team/cre-orchestrator)
 
 </div>
 
