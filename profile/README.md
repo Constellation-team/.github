@@ -16,6 +16,46 @@
 
 ---
 
+## Judge Quick Access
+
+<div align="center">
+
+[![Live App](https://img.shields.io/badge/Live_App-Open_CREator-00B37E?style=for-the-badge&logo=vercel)](https://creator-chainlink.vercel.app)
+&nbsp;
+[![Demo Video](https://img.shields.io/badge/Demo_Video-Watch_on_YouTube-FF0000?style=for-the-badge&logo=youtube)](PASTE_VIDEO_URL_HERE)
+&nbsp;
+[![Testing Guide](https://img.shields.io/badge/Testing_Guide-WORKFLOW__TESTING.md-375BD2?style=for-the-badge)](https://github.com/Constellation-team/front-end/blob/main/documentation/WORKFLOW_TESTING.md)
+&nbsp;
+[![Judges Guide](https://img.shields.io/badge/Judges_Guide-JUDGES.md-0075CA?style=for-the-badge)](https://github.com/Constellation-team/front-end/blob/main/documentation/JUDGES.md)
+
+</div>
+
+### Source Repositories
+
+<div align="center">
+
+<a href="https://github.com/Constellation-team/front-end"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Constellation-team&repo=front-end&theme=dark&hide_border=true" /></a>
+<a href="https://github.com/Constellation-team/back-end"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Constellation-team&repo=back-end&theme=dark&hide_border=true" /></a>
+<a href="https://github.com/Constellation-team/cre-orchestrator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Constellation-team&repo=cre-orchestrator&theme=dark&hide_border=true" /></a>
+
+</div>
+
+---
+
+## Submission Requirements
+
+| # | Requirement | Status | Evidence |
+|---|---|---|---|
+| 1 | Project description covering use case, stack, and architecture | Done | This README — [Architecture](#system-architecture), [Stack](#tech-stack) |
+| 2 | Public 3–5 min video showing workflow execution or CLI simulation | Done | [Watch on YouTube](PASTE_VIDEO_URL_HERE) |
+| 3 | Publicly accessible source code | Done | [front-end](https://github.com/Constellation-team/front-end) · [back-end](https://github.com/Constellation-team/back-end) · [cre-orchestrator](https://github.com/Constellation-team/cre-orchestrator) |
+| 4 | README with links to all files using Chainlink | Done | [Chainlink Files](#chainlink-files) section below |
+| 5 | Build, simulate, or deploy a CRE workflow used within the project | Done | [`main.ts`](https://github.com/Constellation-team/cre-orchestrator/blob/main/workflows/main.ts) is a live CRE workflow; simulation runs on every "Prove" click |
+| 6 | Integrate blockchain with external API, LLM, or AI agent | Done | DeepSeek LLM builds the visual canvas from natural language; Solidity contracts deploy to Sepolia; Chainlink Price Feeds, CCIP, and Functions are first-class node types |
+| 7 | Demonstrate successful simulation (CRE CLI) or live CRE deployment | Done | `POST /api/simulate` returns authentic `[SIMULATION]`/`[USER LOG]` CRE CLI output — [try it live](https://creator-chainlink.vercel.app) |
+
+---
+
 ## What is CREator?
 
 CREator is a browser-based, no-code workflow editor that lets developers and non-developers design, simulate, and export Chainlink CRE workflows visually. Instead of writing TypeScript by hand and learning the CRE SDK from scratch, users drag nodes onto a canvas, connect them, and click a button to get a production-ready CRE project.
@@ -264,24 +304,7 @@ CREator is not a proof of concept with hardcoded data. It is a general-purpose v
 
 ## Fulfillment of Common Requirements
 
-| Requirement | Status |
-|---|---|
-| Build, simulate, or deploy a CRE Workflow | Simulation engine runs on every "Prove" click; export produces a runnable CRE project |
-| Integrate blockchain with external data source or LLM | DeepSeek LLM for AI assistant; Chainlink Price Feeds, CCIP, Functions as node types; Solidity contracts deployed to Sepolia |
-| Demonstrate simulation | /api/simulate returns authentic CRE CLI-formatted output including [SIMULATION] and [USER LOG] markers |
-| Publicly viewable video | See repository README |
-| Public source code | This organization — three repositories |
-| README with Chainlink file links | See below |
-
----
-
-## Repository Structure
-
-| Repository | Purpose |
-|---|---|
-| [front-end](../../front-end) | React 19 + Vite visual editor, AI assistant, wallet integration, ZIP export |
-| [back-end](../../back-end) | Node.js + Express API: Solidity compiler, simulation engine, file writer |
-| [cre-orchestrator](../../cre-orchestrator) | CRE workspace: generated main.ts, workflow.yaml, config files |
+See the [Submission Requirements](#submission-requirements) checklist at the top of this README for a full compliance breakdown with direct evidence links.
 
 ---
 
@@ -289,12 +312,12 @@ CREator is not a proof of concept with hardcoded data. It is a general-purpose v
 
 | File | Role |
 |---|---|
-| [cre-orchestrator/workflows/main.ts](../../cre-orchestrator/workflows/main.ts) | CRE workflow entry point — uses CronCapability, Runtime, handler, Runner from @chainlink/cre-sdk |
-| [cre-orchestrator/workflows/workflow.yaml](../../cre-orchestrator/workflows/workflow.yaml) | CRE target definitions (staging-settings, production-settings) |
-| [cre-orchestrator/workflows/config.staging.json](../../cre-orchestrator/workflows/config.staging.json) | Staging configuration (cron schedule) |
-| [cre-orchestrator/workflows/package.json](../../cre-orchestrator/workflows/package.json) | Declares @chainlink/cre-sdk dependency |
-| [front-end/src/utils/codeGenerator.ts](../../front-end/src/utils/codeGenerator.ts) | Generates CRE-compatible TypeScript from the visual canvas |
-| [back-end/server.production.ts](../../back-end/server.production.ts) | Simulation engine that parses runtime.log() and returns CRE CLI output format |
+| [cre-orchestrator/workflows/main.ts](https://github.com/Constellation-team/cre-orchestrator/blob/main/workflows/main.ts) | CRE workflow entry point — uses CronCapability, Runtime, handler, Runner from @chainlink/cre-sdk |
+| [cre-orchestrator/workflows/workflow.yaml](https://github.com/Constellation-team/cre-orchestrator/blob/main/workflows/workflow.yaml) | CRE target definitions (staging-settings, production-settings) |
+| [cre-orchestrator/workflows/config.staging.json](https://github.com/Constellation-team/cre-orchestrator/blob/main/workflows/config.staging.json) | Staging configuration (cron schedule) |
+| [cre-orchestrator/workflows/package.json](https://github.com/Constellation-team/cre-orchestrator/blob/main/workflows/package.json) | Declares @chainlink/cre-sdk dependency |
+| [front-end/src/utils/codeGenerator.ts](https://github.com/Constellation-team/front-end/blob/main/src/utils/codeGenerator.ts) | Generates CRE-compatible TypeScript from the visual canvas |
+| [back-end/server.production.ts](https://github.com/Constellation-team/back-end/blob/main/server.production.ts) | Simulation engine that parses runtime.log() and returns CRE CLI output format |
 
 ---
 
@@ -304,7 +327,7 @@ CREator is not a proof of concept with hardcoded data. It is a general-purpose v
 
 [![Frontend on Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)](https://creator-chainlink.vercel.app)
 [![Backend on Render](https://img.shields.io/badge/Backend_API-Render-46E3B7?style=for-the-badge&logo=render)](https://creator-backend.onrender.com/health)
-[![Judge Guide](https://img.shields.io/badge/Evaluation_Guide-JUDGES.md-375BD2?style=for-the-badge)](../../front-end/documentation/JUDGES.md)
+[![Judge Guide](https://img.shields.io/badge/Evaluation_Guide-JUDGES.md-375BD2?style=for-the-badge)](https://github.com/Constellation-team/front-end/blob/main/documentation/JUDGES.md)
 
 </div>
 
