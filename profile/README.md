@@ -22,7 +22,7 @@
 
 [![Live App](https://img.shields.io/badge/Live_App-Open_CREator-00B37E?style=for-the-badge&logo=vercel)](https://creator-chainlink.vercel.app)
 &nbsp;
-[![Demo Video](https://img.shields.io/badge/Demo_Video-Watch_on_YouTube-FF0000?style=for-the-badge&logo=youtube)](PASTE_VIDEO_URL_HERE)
+[![Demo Video](https://img.shields.io/badge/Demo_Video-Watch_on_YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtu.be/8sdUA1B2Rjo)
 &nbsp;
 [![Testing Guide](https://img.shields.io/badge/Testing_Guide-WORKFLOW__TESTING.md-375BD2?style=for-the-badge)](https://github.com/Constellation-team/front-end/blob/main/documentation/WORKFLOW_TESTING.md)
 &nbsp;
@@ -49,12 +49,12 @@
 | # | Requirement | Status | Evidence |
 |---|---|---|---|
 | 1 | Project description covering use case, stack, and architecture | Done | This README — [Architecture](#system-architecture), [Stack](#tech-stack) |
-| 2 | Public 3–5 min video showing workflow execution or CLI simulation | Done | [Watch on YouTube](PASTE_VIDEO_URL_HERE) |
+| 2 | Public 3–5 min video showing workflow execution or CLI simulation | Done | [Watch on YouTube](https://youtu.be/8sdUA1B2Rjo) |
 | 3 | Publicly accessible source code | Done | [front-end](https://github.com/Constellation-team/front-end) · [back-end](https://github.com/Constellation-team/back-end) · [cre-orchestrator](https://github.com/Constellation-team/cre-orchestrator) |
 | 4 | README with links to all files using Chainlink | Done | [Chainlink Files](#chainlink-files) section below |
 | 5 | Build, simulate, or deploy a CRE workflow used within the project | Done | [`main.ts`](https://github.com/Constellation-team/cre-orchestrator/blob/main/workflows/main.ts) is a live CRE workflow; simulation runs on every "Prove" click |
 | 6 | Integrate blockchain with external API, LLM, or AI agent | Done | DeepSeek LLM builds the visual canvas from natural language; Solidity contracts deploy to Sepolia; Chainlink Price Feeds, CCIP, and Functions are first-class node types |
-| 7 | Demonstrate successful simulation (CRE CLI) or live CRE deployment | Done | `POST /api/simulate` returns authentic `[SIMULATION]`/`[USER LOG]` CRE CLI output — [try it live](https://creator-chainlink.vercel.app) |
+| 7 | Demonstrate successful simulation (CRE CLI) or live CRE deployment | Done | `POST /api/simulate` returns authentic `[SIMULATION]`/`[USER LOG]` CRE CLI output |
 
 ---
 
